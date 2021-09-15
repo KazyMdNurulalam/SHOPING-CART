@@ -1,12 +1,7 @@
 body{
 	background: #fff;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
+
 .cart{
 	margin: 100px 0;
 	background-color: #F6F5FA;;
@@ -58,4 +53,11 @@ input::-webkit-inner-spin-button {
 	font-size: 19px;
 	background-color: #2FBE70;
 	border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
